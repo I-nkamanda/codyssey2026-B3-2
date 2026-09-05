@@ -1,0 +1,17 @@
+INIT "Alice Kim"
+COMMIT "Initial commit"
+BRANCH feature
+SWITCH feature
+COMMIT "Add login feature"
+SWITCH main
+COMMIT "Add payment feature"
+LOG
+PATH 0000000000000002 0000000000000003
+SEARCH "login"
+SEARCH "add feature"
+SEARCH --author="Alice Kim"
+LOG --sort-by=date
+LOG --sort-by=author
+MERGE feature
+ANCESTORS 0000000000000004
+QUIT
